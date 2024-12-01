@@ -26,4 +26,4 @@ Some issues require more immediate attention than others. These labels help us s
 
 - **`priority: high`** 🔥: This is urgent. Handle with care!
 - **`priority: medium`** ⚖️: Important, but not an emergency.
-- **`priority: low`** 🐢:
+- **`priority: low`** 🐢: No biggie. A few tweaks and we’re done.
