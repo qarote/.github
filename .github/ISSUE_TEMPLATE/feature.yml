@@ -5,10 +5,6 @@ labels: [ "feature 🚀" ]
 
 
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ### 🌟 Feature Request: [Title of the Feature]
 
   - type: input
     id: description

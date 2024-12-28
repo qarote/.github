@@ -5,10 +5,6 @@ labels: [ "task 🧑‍💻" ]
 
 
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ### 📋 Description
 
   - type: textarea
     id: description
