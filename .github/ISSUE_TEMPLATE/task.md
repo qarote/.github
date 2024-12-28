@@ -1,8 +1,8 @@
 ---
-name: Issue template
-about: Describe this issue template's purpose here.
+name: Task
+about: Just a regular task... someone has to tackle it, right?
 title: ''
-labels: ''
+labels: 'task 🧑‍💻'
 assignees: ''
 
 ---
