@@ -1,0 +1,36 @@
+
+name: Label Priority
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Assign priority label
+        id: label
+        if: github.event.issue.body != ''
+        run: |
+          PRIORITY=$(echo "${{ github.event.issue.body }}" | grep -i 'priority' | awk -F ': ' '{print $2}')
+          PRIORITY=$(echo $PRIORITY | xargs) # trim whitespace
+          echo "Priority is $PRIORITY"
+          if [[ "$PRIORITY" == "High" ]]; then
+            LABEL="priority: high 🔥"
+          elif [[ "$PRIORITY" == "Medium" ]]; then
+            LABEL="priority: medium ⚖️"
+          elif [[ "$PRIORITY" == "Low" ]]; then
+            LABEL="priority: low 🐢"
+          fi
+          echo "::set-output name=priority::$LABEL"
+
+      - name: Add label to the issue
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          labels: ${{ steps.label.outputs.priority }}
