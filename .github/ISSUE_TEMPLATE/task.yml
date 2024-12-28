@@ -1,0 +1,78 @@
+
+name: Task
+description: Just a regular task... someone has to tackle it, right?
+labels: [ "task 🧑‍💻" ]
+
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 📋 Description
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 📋 Description
+      description: "Provide a thoughtful and precise explanation of the issue or task, considering the broader implications and context."
+      placeholder: "Enter the description here"
+    validations:
+      required: true
+
+  - type: input
+    id: expected_behavior
+    attributes:
+      label: 🤨 Expected Behavior
+      description: "Describe the intended outcome, reflecting on the optimal state and its benefits."
+      placeholder: "Enter the expected behavior here"
+    validations:
+      required: true
+
+  - type: input
+    id: actual_behavior
+    attributes:
+      label: 🫣 Actual Behavior
+      description: "Detail the current situation, noting discrepancies and their potential impact."
+      placeholder: "Enter the actual behavior here"
+
+  - type: textarea
+    id: possible_solution
+    attributes:
+      label: 🛠️ Possible Solution
+      description: "Offer well-reasoned suggestions to address the issue or enhance the feature, grounded in practical wisdom."
+      placeholder: "Enter possible solutions here"
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: 🔍 Additional Context
+      description: "Include any further details or insights that may shed light on the issue."
+      placeholder: "Enter additional context here"
+
+  - type: input
+    id: goal
+    attributes:
+      label: 🎯 Goal
+      description: "Articulate the desired end result and its significance for the project."
+      placeholder: "Enter the goal here"
+    validations:
+      required: true
+
+  - type: textarea
+    id: other_comments
+    attributes:
+      label: 💬 Any Other Comments?
+      description: "Add any extra thoughts or considerations that could be valuable."
+      placeholder: "Enter any additional comments here"
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🚀 Priority
+      description: "Select the priority level for this task."
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true

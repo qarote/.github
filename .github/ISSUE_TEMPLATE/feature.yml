@@ -1,0 +1,78 @@
+
+name: Feature
+description: Exciting new features! Adding awesome elements to enhance the app.
+labels: [ "feature 🚀" ]
+
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🌟 Feature Request: [Title of the Feature]
+
+  - type: input
+    id: description
+    attributes:
+      label: 📋 Description
+      description: "Provide a thoughtful and precise explanation of the proposed feature, considering the broader implications and context. What is the feature? Why is it needed?"
+      placeholder: "Enter the description here"
+    validations:
+      required: true
+
+  - type: input
+    id: expected_outcome
+    attributes:
+      label: 🤨 Expected Outcome
+      description: "Describe the intended outcome of the feature. How will it improve the project? What benefits does it bring?"
+      placeholder: "Enter the expected outcome here"
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation_ideas
+    attributes:
+      label: 🛠️ Implementation Ideas
+      description: "Offer well-reasoned suggestions for how this feature could be implemented. Consider potential challenges and how they might be addressed."
+      placeholder: "Enter implementation ideas here"
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: 🔍 Additional Context
+      description: "Include any further details or insights that may shed light on the feature request. Are there similar features in other projects? Any relevant references or examples?"
+      placeholder: "Enter additional context here"
+
+  - type: textarea
+    id: visual_aids
+    attributes:
+      label: 📷 Visual Aids
+      description: "If applicable, provide mockups, diagrams, or other visual aids to illustrate the feature."
+      placeholder: "Enter links to visual aids here"
+
+  - type: input
+    id: goal
+    attributes:
+      label: 🎯 Goal
+      description: "Articulate the desired end result and its significance for the project. How will this feature align with the project's objectives?"
+      placeholder: "Enter the goal here"
+    validations:
+      required: true
+
+  - type: textarea
+    id: other_comments
+    attributes:
+      label: 💬 Any Other Comments?
+      description: "Add any extra thoughts or considerations that could be valuable. Are there any potential risks or dependencies to consider?"
+      placeholder: "Enter any additional comments here"
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🚀 Priority
+      description: "Select the priority level for this feature request."
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
