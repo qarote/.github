@@ -1,6 +1,6 @@
 
 name: Bug
-description: Identifying and fixing issues to ensure smooth functionality of the app.
+description: Oops! Something's not working, and we need to fix it quickly!
 labels: [ "bug 🐛" ]
 
 body:
