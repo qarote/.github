@@ -15,7 +15,7 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: expected_outcome
     attributes:
       label: 🤨 Expected Outcome
