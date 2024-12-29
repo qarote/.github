@@ -1,0 +1,77 @@
+
+name: Bug
+description: Identifying and fixing issues to ensure smooth functionality of the app.
+labels: [ "bug 🐛" ]
+
+body:
+
+  - type: input
+    id: description
+    attributes:
+      label: 📋 Bug Description
+      description: "Provide a clear and precise explanation of the bug. What unexpected behavior did you observe?"
+      placeholder: "Enter the bug description here"
+    validations:
+      required: true
+
+  - type: input
+    id: steps_to_reproduce
+    attributes:
+      label: 🔄 Steps to Reproduce
+      description: "Describe the exact steps to reproduce the bug. What actions need to be taken to observe the issue?"
+      placeholder: "Enter the steps to reproduce here"
+    validations:
+      required: true
+
+  - type: input
+    id: expected_behavior
+    attributes:
+      label: 🤨 Expected Behavior
+      description: "What was the expected behavior? How should the system have responded in this situation?"
+      placeholder: "Enter the expected behavior here"
+    validations:
+      required: true
+
+  - type: input
+    id: actual_behavior
+    attributes:
+      label: ⚠️ Actual Behavior
+      description: "What is the actual behavior you observed? How does it differ from the expected behavior?"
+      placeholder: "Enter the actual behavior here"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: 🔍 Additional Context
+      description: "Provide any extra information that might help understand the problem. For example, the environment, configuration, or specific conditions."
+      placeholder: "Enter additional context here"
+
+  - type: textarea
+    id: error_logs
+    attributes:
+      label: 📂 Error Logs
+      description: "If you have error logs or screenshots that illustrate the issue, please add them here."
+      placeholder: "Enter error logs or links here"
+
+  - type: input
+    id: impact
+    attributes:
+      label: 🎯 Impact
+      description: "Assess the impact of the bug on the application. Is it blocking, disruptive, or minor?"
+      placeholder: "Enter the impact here"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🚀 Priority
+      description: "Select the priority level for this bug."
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
