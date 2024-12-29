@@ -1,0 +1,73 @@
+
+name: Enhancement
+description: Improving features or adding new functionality to enhance the app's performance and user experience.
+labels: [ "enhancement 🌟" ]
+
+body:
+
+  - type: input
+    id: description
+    attributes:
+      label: 📋 Enhancement Description
+      description: "Provide a clear and detailed explanation of the proposed enhancement. What feature or improvement do you suggest?"
+      placeholder: "Enter the enhancement description here"
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_outcome
+    attributes:
+      label: 🤨 Expected Outcome
+      description: "Describe the expected outcome of this enhancement. How will it improve the app? What benefits will it bring?"
+      placeholder: "Enter the expected outcome here"
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation_ideas
+    attributes:
+      label: 🛠️ Implementation Ideas
+      description: "Provide ideas for how this enhancement could be implemented. Consider potential challenges and possible solutions."
+      placeholder: "Enter implementation ideas here"
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: 🔍 Additional Context
+      description: "Include any further details that might help clarify the enhancement request. Are there similar features in other apps or systems?"
+      placeholder: "Enter additional context here"
+
+  - type: textarea
+    id: visual_aids
+    attributes:
+      label: 📷 Visual Aids
+      description: "If applicable, provide mockups, diagrams, or other visual aids to illustrate the enhancement."
+      placeholder: "Enter links to visual aids here"
+
+  - type: input
+    id: goal
+    attributes:
+      label: 🎯 Goal
+      description: "Describe the ultimate goal of the enhancement. How will it align with the overall objectives of the project?"
+      placeholder: "Enter the goal here"
+    validations:
+      required: true
+
+  - type: textarea
+    id: other_comments
+    attributes:
+      label: 💬 Any Other Comments?
+      description: "Add any extra thoughts or considerations that could be valuable. Are there any risks or dependencies to consider?"
+      placeholder: "Enter any additional comments here"
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🚀 Priority
+      description: "Select the priority level for this enhancement request."
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
